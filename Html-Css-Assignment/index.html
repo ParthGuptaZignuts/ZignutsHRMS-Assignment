@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html-Css-Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"
+    />
+
+    <!-- icon cdn  -->
+    <script
+      src="https://kit.fontawesome.com/db99b20772.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main section  -->
+    <section class="page-one">
+      <nav class="navbar">
+        <span class="logo">Panto</span>
+        <ul class="nav-links">
+          <li>
+            <select name="Furniture" id="" class="list-select">
+              <option value="furniture">Furniture</option>
+              <option value="furniture">Furniture</option>
+              <option value="furniture">Furniture</option>
+            </select>
+          </li>
+          <li>Shop</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+        <div class="nav-cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div class="nav-links-icon" onclick="toggleNavLinks()">&#9776;</div>
+      </nav>
+
+      <div class="header-content">
+        <h1 class="main-heading">
+          Make Your Interior More<br />
+          Minimalistic & Modern
+        </h1>
+        <p class="sub-heading">
+          Turn your room with panto into a lot more minimalist<br />
+          and modern with ease and speed
+        </p>
+        <div class="search-bar">
+          <form action="">
+            <input type="text" placeholder="Search furniture" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- choosing us section -->
+    <section class="choose-us">
+      <div class="choose-left">
+        <h1>Why<br />Choosing Us</h1>
+      </div>
+      <div class="choose-right">
+        <div class="one">
+          <h1>Luxury facilities</h1>
+          <p>
+            The advantage of hiring a workspace <br />
+            ßwith us is that givees you comfortable <br />
+            service and all-around facilities.
+          </p>
+          <a href=""> More Info &nbsp; &rarr; </a>
+        </div>
+        <div class="one">
+          <h1>Affordable Price</h1>
+          <p>
+            You can get a workspace of the highst <br />
+            quality at an affordable price and still <br />
+            enjoy the facilities that are oly here.
+          </p>
+          <a href=""> More Info &nbsp; &rarr; </a>
+        </div>
+        <div class="one">
+          <h1>Many Choices</h1>
+          <p>
+            We provide many unique work space <br />
+            choices so that you can choose the <br />
+            workspace to your liking.
+          </p>
+          <a href=""> More Info &nbsp; &rarr; </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- best selling product section -->
+    <section class="best-selling">
+      <div class="best-selling-content">
+        <h1>Best Selling Product</h1>
+        <div class="best-selling-sort">
+          <ul>
+            <li id="Chairli" onclick="openChair()" class="tab2 active">
+              chair
+            </li>
+            <li id="Bedsli" onclick="openBeds()" class="tab2">Beds</li>
+            <li id="Sofali" onclick="openSofa()" class="tab2">Sofa</li>
+            <li id="Lampli" onclick="openLamp()" class="tab2">Lamp</li>
+          </ul>
+        </div>
+        <!-- this is div1 -->
+        <div id="Chair" class="new-adding-bb-slide-container swiper">
+          <div class="new-adding-bb-inner slide-content">
+            <div class="swiper-wrapper">
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair1.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>chair</p>
+                  <h5>Sakarias ArmChair</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$392</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair2.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Text</p>
+                  <h5>Sakarias ArmChair</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$299</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair3.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Text</p>
+                  <h5>Sakarias ArmChair</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$519</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair4.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Text</p>
+                  <h5>Sakarias ArmChair</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$921</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- this is the div2 -->
+        <div id="Beds" class="new-adding-bb-slide-container swiper">
+          <div class="new-adding-bb-inner slide-content">
+            <div class="swiper-wrapper">
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair1.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Beds</p>
+                  <h5>This is the bed-1</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$392</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair2.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Bed-2</p>
+                  <h5>this is the bed-2</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$299</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair3.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Bed-3</p>
+                  <h5>This is the bed-3</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$519</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair4.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Bed-4</p>
+                  <h5>This is the bed-4</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$921</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- this is the div3 -->
+        <div id="Sofa" class="new-adding-bb-slide-container swiper">
+          <div class="new-adding-bb-inner slide-content">
+            <div class="swiper-wrapper">
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair1.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Sofa</p>
+                  <h5>This is the Sofa-1</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$392</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair2.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Sofa-2</p>
+                  <h5>This is the Sofa-2</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$299</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair3.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Sofa-3</p>
+                  <h5>This is the Sofa-3</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$519</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair4.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Sofa-4</p>
+                  <h5>This is the sofa-4</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$921</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- this is the div4 -->
+        <div id="Lamp" class="new-adding-bb-slide-container swiper">
+          <div class="new-adding-bb-inner slide-content">
+            <div class="swiper-wrapper">
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair1.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Lamp-1</p>
+                  <h5>This is the Lamp-1</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$392</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair2.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Lamp-2</p>
+                  <h5>This is the Lamp-2</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$299</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair3.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Lamp-3</p>
+                  <h5>This is the Lamp-3</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$519</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chair-1 card swiper-slide">
+                <div class="chair-image">
+                  <img src="img/chair4.png" alt="" />
+                </div>
+                <div class="chair-details">
+                  <p>Lamp-4</p>
+                  <h5>This is the Lamp-4</h5>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price-and-add">
+                    <p>$921</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="view-all">
+          <a href="">View All &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section experience -->
+    <section class="experience">
+      <div class="ex-left">
+        <img src="./img/Group 48095438.png" alt="" />
+        <!-- <div class="experience-img-shadow-1"></div>
+        <div class="experience-img-shadow-2"></div> -->
+      </div>
+      <div class="ex-right">
+        <h1 class="ex-heading">EXPERIENCES</h1>
+        <h3 class="ex-sub-heading">
+          We Provide You The <br />
+          Best Experience
+        </h3>
+        <p class="ex-main">
+          You don’t have to worry about the result because all of these <br />
+          interiors are made by people who are professionals in their fields
+          <br />
+          with an elegant and lucurious style and with premium quality <br />
+          materials
+        </p>
+        <a href="" class="ex-link"> MoreInfo &rarr;</a>
+      </div>
+    </section>
+
+    <!-- materials -->
+    <section class="materials">
+      <div class="mat-left">
+        <h1 class="mat-heading">Materials</h1>
+        <h3 class="mat-sub-heading">
+          Very serious <br />
+          materials for making <br />
+          furniture
+        </h3>
+        <p class="mat-main">
+          Because panto was very serious about designing furniture for our
+          <br />
+          environment, using a very expensive and famous capital but at a <br />
+          relatively low price
+        </p>
+        <a href="" class="mat-link"> MoreInfo &rarr;</a>
+      </div>
+      <div class="mat-right">
+        <img src="./img/mat.png" alt="" srcset="" />
+      </div>
+    </section>
+
+    <!-- test -->
+    <section class="test">
+      <div class="test-header">
+        <h1>TESTIMONIALS</h1>
+        <h5>Our Client Reviews</h5>
+      </div>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div
+              class="card swiper-slide"
+              style="
+                background: url('./img/testimonial1.png');
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: #fff;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <div class="test-card">
+                <img src="./img//client1.png" alt="" />
+                <p class="test-name">Bang Upin</p>
+                <span class="test-firm">Pedagang Asongan</span>
+                <p class="test-review">
+                  “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
+                  terlihat mahal“
+                </p>
+                <div class="test-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card swiper-slide"
+              style="
+                background: url('./img/testimonial2.png');
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: #fff;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <div class="test-card">
+                <img src="./img//client2.png" alt="" />
+                <p class="test-name">Bang Upin</p>
+                <span class="test-firm">Pedagang Asongan</span>
+                <p class="test-review">
+                  “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
+                  terlihat mahal“
+                </p>
+                <div class="test-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card swiper-slide"
+              style="
+                background: url('./img/testimonial3.png');
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: #fff;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 0px 4px 8px rgba(79, 79, 79, 0.787);
+              "
+            >
+              <div class="test-card">
+                <img src="./img//client3.png" alt="" />
+                <p class="test-name">Bang Upin</p>
+                <span class="test-firm">Pedagang Asongan</span>
+                <p class="test-review">
+                  “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
+                  terlihat mahal“
+                </p>
+                <div class="test-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer">
+        <div class="footer-col">
+          <h4>Panto</h4>
+          <p>
+            The advantage of hiring a workspace with <br />
+            us is that gives you comfortable service <br />
+            and all-around facilities.
+          </p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-val">Services</p>
+          <ul>
+            <li><a href="#">Email Marketing</a></li>
+            <li><a href="#">Compaignes</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-val">Furniture</p>
+          <ul>
+            <li><a href="#">Beds</a></li>
+            <li><a href="#">Chair</a></li>
+            <li><a href="#">Cars</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-val">follow us</p>
+          <div class="links">
+            <a href="#"><i class="fab fa-facebook-f"></i> &nbsp; Facebook</a>
+            <br />
+            <a href="#"><i class="fab fa-twitter"></i> &nbsp; Twitter</a> <br />
+            <a href="#"><i class="fab fa-instagram"></i> &nbsp; Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-end">
+        <div class="foot-end-left"><p>Copyright © 2021</p></div>
+        <div class="foot-end-right">
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
