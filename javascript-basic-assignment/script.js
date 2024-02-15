@@ -4,6 +4,7 @@ function resetValue(){
   document.getElementById('results2').innerHTML = '';
   document.getElementById('results3').innerHTML = '';
   document.getElementById('results4').innerHTML = '';
+  document.getElementById('results6').innerHTML = '';
 }
 // QUESTION-1
 function generateCombinations(input) {
@@ -111,24 +112,42 @@ function generateCombinations(input) {
   }
 
   // question 5
-  function getSubsets(arr, subsetLength, start = 0, currentSubset = [], result = []) {
-    if (currentSubset.length === subsetLength) {
-        result.push([...currentSubset]);
-        return;
-    }
+//   function getSubsetsWithFixedLength(arr, length) {
+//     const result = [];
 
-    for (let i = start; i < arr.length; i++) {
-        currentSubset.push(arr[i]);
-        getSubsets(arr, subsetLength, i + 1, currentSubset, result);
-        currentSubset.pop();
-    }
+//     function generateSubsets(currentSubset, startIndex) {
+//         if (currentSubset.length === length) {
+//             result.push([...currentSubset]);
+//             return;
+//         }
 
-    return result;
+//         for (let i = startIndex; i < arr.length; i++) {
+//             currentSubset.push(arr[i]);
+//             generateSubsets(currentSubset, i + 1);
+//             currentSubset.pop();
+//         }
+//     }
+
+//     generateSubsets([], 0);
+
+//     return result;
+// }
+// const inputArray = [1, 2, 3];
+// const subsetLength = 2;
+// const resultSubsets = getSubsetsWithFixedLength(inputArray, subsetLength);
+// console.log(resultSubsets);
+
+// QUESTION-6
+function question6(){
+  const value6 = document.getElementById("value-6").value;
+  console.log(value6);
+
+  let valueToString = value6.toString();
+  console.log(valueToString , typeof(valueToString));
+
+  const finalAns = valueToString.split('').reverse().join('');
+
+  const answersetter = document.getElementById("results6");
+  answersetter.innerText= `The Answer of Reverse a number is ${finalAns}` ; 
+  console.log(finalAns);
 }
-
-// Example usage:
-const inputArray = [1, 2, 3];
-const subsetLength = 2;
-const subsets = getSubsets(inputArray, subsetLength);
-
-console.log(subsets);
