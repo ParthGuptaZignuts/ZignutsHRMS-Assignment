@@ -914,6 +914,27 @@
       width: 52vw;
     }
   
+    /* material section */
+    .mat-left{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .mat-heading{
+      margin-bottom: 5%;
+    }
+
+    .mat-sub-heading{
+      margin-bottom: 5%;
+    }
+
+    .mat-main{
+      margin-bottom: 5%;
+    }
+
+
   
   
     /* test section  */
